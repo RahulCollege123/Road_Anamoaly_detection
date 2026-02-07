@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+edgeai/
+venv/
+
+# Output files
+outputs/
+*.mp4
+*.avi
+
+# OS
+.DS_Store
