@@ -81,11 +81,11 @@ Offline operation
 XNNPACK delegate enabled
 
 System Features:-
-✔ Real-time bounding box detection
-✔ Timestamp logging
-✔ Low-power deployment
-✔ Edge AI architecture
-✔ Scalable for smart city integration
+Real-time bounding box detection
+Timestamp logging
+Low-power deployment
+Edge AI architecture
+Scalable for smart city integration
 
 Future Scope
 GPS integration
@@ -93,8 +93,10 @@ Cloud synchronization
 Road damage severity classification
 Municipality dashboard integration
 
-📽 Demo Video
-
+Demo Video
 [Insert YouTube Link]
 
-👨‍💻 Team Members
+Team Members:-
+Deependra Vithharia
+Rahul Patil
+Saurav Singh
