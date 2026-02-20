@@ -94,95 +94,71 @@ Road damage severity classification
 Municipality dashboard integration
 
 
-🛠️ Setup & Installation
-1️⃣ Clone the Repository
+Setup & Installation
+1. Clone the Repository
 git clone https://github.com/RahulCollege123/road_anomaly_detection.git
 cd road_anomaly_detection
-2️⃣ Create Virtual Environment (Recommended)
+
+2. Create Virtual Environment (Recommended)
 Create venv
 python3 -m venv edgeai
 Activate venv
 source edgeai/bin/activate
-
 After activation, you should see:
-
 (edgeai) pi@pi:~/road_anomaly_detection $
-3️⃣ Upgrade pip
+
+3️. Upgrade pip
 pip install --upgrade pip
-4️⃣ Install Dependencies
+
+4️. Install Dependencies
 pip install numpy opencv-python tflite-runtime
 
 If using Pi Camera (legacy):
-
 sudo apt install python3-opencv
 
 If using Picamera2 (libcamera system):
-
 sudo apt install python3-picamera2
 
-▶️ Running the Project
-🟢 1. Live Detection (Camera)
+Running the Project
+1. Live Detection (Camera)
 
 For real-time road anomaly detection:
-
 python detect_live.py
 
 What happens:
-
 Opens Pi Camera / USB Camera
-
 Runs real-time inference
-
 Displays bounding boxes
-
 Logs high-confidence detections (≥ 0.96)
-
 Shows live FPS
-
 Press Q to exit.
 
-🟢 2. Detect From Video File
-
+2. Detect From Video File
 To run detection on a recorded video:
-
 python detect_video.py
 
 What happens:
-
 Opens file picker
-
 Loads selected video
-
 Runs detection frame-by-frame
-
 Saves output video with bounding boxes
-
 Saves detection log CSV file
 
 Output files are stored in:
-
-outputs/
-├── detected_videos/
-└── detection_logs/
-📊 Detection Logging
+outputs/detected_videos/detection_logs/Detection Logging
 
 Only detections with:
-
 confidence ≥ 0.96
-
 are saved into:
-
 outputs/detection_logs/
 
 Example log:
-
 timestamp_sec,class,confidence
 2.34,Pothole,0.97
 7.10,Human,0.99
-🔥 Optional: Deactivate Virtual Environment
 
+Optional: Deactivate Virtual Environment
 When done:
-
 deactivate
 
 Demo Video
